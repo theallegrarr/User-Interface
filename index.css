@@ -150,34 +150,41 @@ h5 {
 }
 
 /* Your code starts here! */
-.address {
-  display: table-row;
-  width: 80%;
-  padding: 20px;
-  float: left;
-}
-.copyright {
-  display: table-row;
-  padding: 10px;
-  float: left;
-  margin-left: 40%;
-  align-content: center;
-}
-
 a {
   color: gray;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.head.left {
+  float: left;
+  height: 40px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.head.right {
+  float: left;
+  height: 40px;
+  margin-left: 50px;
+  text-align: right;
+  margin-left: 200px;
 }
 
 .top {
   display: table-row;
   padding: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   float: left;
+  width: 90%;
 }
 .container {
-  margin: 2%;
-  padding: 2%;
+  margin: auto;
+  padding: padding;
   align-content: center;
+  width: 90%;
 }
 .top.left {
   float: center;
@@ -197,27 +204,26 @@ a {
   margin-top: 20px;
 }
 
-.head.left {
-  float: left;
-  height: 40px;
-  margin-top: 10px;
-  text-align: left;
+.button {
+  background-color: white; /* Green */
+  border-color: black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .items {
   padding: 30px;
 }
-.head.right {
-  float: left;
-  height: 40px;
-  margin-left: 50px;
-  text-align: right;
-}
+
 .info {
   float: left;
   margin-top: 30px;
   display: table-row;
-  width: 80%;
+  width: 90%;
   padding: 20px;
 }
 .info.features {
@@ -235,7 +241,7 @@ a {
   padding: 20px;
 }
 
-.info {
+.info2 {
   float: left;
   margin-top: 30px;
   display: table-row;
@@ -268,17 +274,36 @@ a {
   float: left;
   padding: 20px;
   display: table-row;
-  width: 80%;
+  width: 90%;
   padding: 20px;
+  align-content: center;
 }
 
-.button {
-  background-color: white; /* Green */
-  border-color: black;
+.address {
+  display: table-row;
+  width: 80%;
+  padding: 20px;
+  float: left;
+}
+.copyright {
+  display: table-row;
+  padding: 10px;
+  float: left;
+  margin-left: 40%;
+  align-content: center;
+}
+
+.hr {
+  float: left;
+  display: table-row;
+  display: block;
   color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-block-start: auto;
+  margin-block-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  width: 100%;
 }
